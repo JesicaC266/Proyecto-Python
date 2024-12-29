@@ -1,0 +1,59 @@
+#Buscar un elemento en una lista:
+numeros = [3, 7, 12, 18, 25]
+buscar = int(input("Ingresa el número a buscar: "))
+
+encontrado = False
+for num in numeros:
+    if num == buscar:
+        encontrado = True
+        break
+
+if encontrado:
+    print(f"El número {buscar} está en la lista.")
+else:
+    print(f"El número {buscar} no está en la lista.")
+
+
+
+#Promedio de una lista de números
+def calcular_promedio(lista):
+    return sum(lista) / len(lista)
+
+numeros = [10, 20, 30, 40]
+print("El promedio es:", calcular_promedio(numeros))
+
+
+
+#Simular una fila de personas:
+fila = []
+while True:
+    accion = input("¿Agregar o eliminar persona? (agregar/eliminar/salir): ").lower()
+    if accion == "agregar":
+        persona = input("Nombre de la persona: ")
+        fila.append(persona)
+    elif accion == "eliminar":
+        if fila:
+            print("Persona eliminada:", fila.pop(0))
+        else:
+            print("La fila está vacía.")
+    elif accion == "salir":
+        break
+    else:
+        print("Acción no válida.")
+    
+    print("Fila actual:", fila)
+
+
+
+#Carrito de compras:
+carrito = {}
+while True:
+    producto = input("Ingresa un producto (o 'salir' para terminar): ")
+    if producto == "salir":
+        break
+    precio = float(input(f"Precio de {producto}: "))
+    carrito[producto] = precio
+
+total = sum(carrito.values())
+print("Productos en el carrito:", carrito)
+print("Total a pagar:", total)
