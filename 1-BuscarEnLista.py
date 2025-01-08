@@ -9,6 +9,6 @@ for num in numeros:
         break
 
 if encontrado:
-    print(f"El número {buscar} está en la lista.")
+    print(f"El numerito {buscar} está en la lista.")
 else:
-    print(f"El número {buscar} no está en la lista.")
+    print(f"El numerito {buscar} no está en la lista.")
