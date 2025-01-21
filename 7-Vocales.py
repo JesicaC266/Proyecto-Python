@@ -1,4 +1,4 @@
-texto = "Hola, ¿cómo estás?"
+texto = "Hola, ¿como estas?"
 
 vocales = "aeiouAEIOU"
 contador_vocales = 0
