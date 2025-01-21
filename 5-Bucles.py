@@ -1,15 +1,15 @@
-numeros = [3,7,2,9,5]
-buscar=7
-encontrado= False
+rango = 50
 
-for numero in numeros:
-    if numero == buscar:
-        encontrado = True
-        break
-    
-if encontrado:
-    print (f"El número {buscar} está en la lista.")
-else:
-    print(f"El número {buscar} no está en la lista.")
+for num in range(2, rango + 1):
+    es_primo = True
+
+    for i in range(2, int(num ** 0.5) + 1): 
+        if num % i == 0:
+            es_primo = False
+            break
+
+    if es_primo:
+        print(num)
+
 
 
