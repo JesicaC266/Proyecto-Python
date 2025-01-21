@@ -1,4 +1,4 @@
-filas = 5
+filas = 7
 
 for i in range(1, filas + 1):
     # Imprimir espacios antes de los asteriscos
