@@ -1,5 +1,5 @@
 class Coche:
-    def __init__(self, marca, modelo, año):
+    def __init__(self, marca, modelo):
         self.marca = marca
         self.modelo = modelo
         self.velocidad = 0
@@ -15,7 +15,6 @@ class Coche:
         self.velocidad += incremento
         print(f"El {self.marca} {self.modelo} está a {self.velocidad} km/h.")
 
-# Crear una instancia de la clase Coche
 mi_coche = Coche("Toyota", "Corolla")
 mi_coche.arrancar()
 mi_coche.acelerar(50)
