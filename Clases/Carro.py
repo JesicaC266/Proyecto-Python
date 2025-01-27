@@ -1,21 +1,22 @@
-class Coche:
-    def __init__(self, marca, modelo):
+class Carro:
+    def __init__(self, marca, color):
         self.marca = marca
-        self.modelo = modelo
-        self.velocidad = 0
+        self.color = color
+        self.frenar = True
 
-    def arrancar(self):
-        print(f"El {self.marca} {self.modelo} ha arrancado.")
+    def movimiento(self):
+        self.frenar = False
+        print(f"el carro color {self.color} está en movimiento")
 
-    def frenar(self):
-        print(f"El {self.marca} {self.modelo} ha frenado.")
-        self.velocidad = 0
+    def freno(self):
+        self.frenar = True
+        print(f"el carro color {self.color} está quieto")
 
-    def acelerar(self, incremento):
-        self.velocidad += incremento
-        print(f"El {self.marca} {self.modelo} está a {self.velocidad} km/h.")
-
-mi_coche = Coche("Toyota", "Corolla")
-mi_coche.arrancar()
-mi_coche.acelerar(50)
-mi_coche.frenar()
+    def cambio_color(self,nuevo_color):
+        self.color = nuevo_color
+        print(f"el carro ahora es de color {self.color}.")
+        
+el_carro = Carro("suzuki", "rojo")
+el_carro.movimiento()
+el_carro.cambio_color("gris")
+el_carro.freno()
