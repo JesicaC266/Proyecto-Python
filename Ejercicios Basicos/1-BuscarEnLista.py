@@ -12,4 +12,3 @@ if encontrado:
     print(f"El numerito {buscar} está en la lista.")
 else:
     print(f"El numerito {buscar} no está en la lista.")
-    #esta es una prueba
